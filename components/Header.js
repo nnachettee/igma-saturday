@@ -32,7 +32,8 @@ export default function Header() {
   return (
     <header className="topbar">
       <Link href={session ? "/app" : "/"} className="brand" aria-label="IGMA home">
-        IGMA
+        <small>The IGMA</small>
+        <b>Sunday League</b>
       </Link>
       <nav className="topbar-nav">
         {session === undefined ? null : session ? (

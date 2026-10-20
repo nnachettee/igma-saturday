@@ -6,7 +6,7 @@ export default function Home() {
     <div className="landing">
       <section className="landing-copy">
         <h1 className="match">
-          <span className="match-time">Saturday, 9 PM</span>
+          <span className="match-time">Saturday, 9&nbsp;PM</span>
           <span className="match-place">La Chopera, El Retiro</span>
         </h1>
         <p className="lede">

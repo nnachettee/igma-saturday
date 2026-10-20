@@ -2,20 +2,25 @@
    One loud thing (the board); everything around it stays quiet. */
 
 :root {
-  --board: #f2f3ef;      /* whiteboard frame */
+  /* Colours from the IGMA Sunday League site */
+  --club: #6b0a1f;       /* burgundy */
+  --club-deep: #55081a;
+  --cream: #f5e1a4;      /* gold-cream on burgundy */
+  --board: #fdf9ee;      /* cream page ground */
   --paper: #ffffff;
-  --ink: #17202e;        /* marker ink */
-  --muted: #5b6472;
-  --line: #d9dcd4;
+  --ink: #1c1412;
+  --muted: #6b5a54;
+  --line: #e6dac0;
   --turf: #2f7a4d;
   --chalk: rgba(255, 255, 255, 0.82);
-  --red: #d33a2c;
+  --red: #8f1029;        /* Red team = club burgundy, a touch brighter on the turf */
   --blue: #2160c4;
-  --flood: #ffd23f;      /* floodlight yellow: selection and "you" */
+  --flood: #f5e1a4;      /* selection and "you" */
   --error: #b42318;
   --ok: #1d6b3f;
 
   --font: "Archivo Variable", "Helvetica Neue", Arial, sans-serif;
+  --display: var(--font-caprasimo), "Cooper Black", Georgia, serif;
   --radius: 10px;
   color-scheme: light;
 }
@@ -636,4 +641,97 @@ button.ring-selected:hover {
 .auth-switch {
   margin-top: 20px;
   color: var(--muted);
+}
+
+/* ---------- IGMA club look (matches igmasundayleague.netlify.app) ---------- */
+
+.topbar {
+  max-width: none;
+  padding: 10px max(16px, calc((100% - 1040px) / 2 + 16px));
+  margin-bottom: 16px;
+  background: var(--club);
+  color: var(--cream);
+}
+
+.brand {
+  display: grid;
+  color: var(--cream);
+  font-family: var(--display);
+  font-weight: 400;
+  font-stretch: normal;
+  text-transform: uppercase;
+}
+
+.brand small {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.brand b {
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0.03em;
+}
+
+.topbar .link-button {
+  color: var(--cream);
+  font-family: var(--display);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.button {
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 15px;
+}
+
+.button-primary {
+  background: var(--club);
+  color: var(--cream);
+}
+
+.button-primary:hover {
+  background: var(--club-deep);
+}
+
+.match-time,
+.lineup-title,
+.auth-title,
+.bench-title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-stretch: normal;
+  text-transform: uppercase;
+  color: var(--club);
+}
+
+.match-time {
+  font-size: clamp(44px, 12vw, 84px);
+  line-height: 0.95;
+}
+
+.lineup-title {
+  font-size: 32px;
+}
+
+.auth-title {
+  font-size: 44px;
+}
+
+.bench-title {
+  font-size: 22px;
+}
+
+.match-place,
+.lineup-place {
+  color: var(--ink);
+  font-style: italic;
+}
+
+.pitch {
+  border-color: var(--club);
 }
