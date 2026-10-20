@@ -56,7 +56,6 @@ export default function Pitch({
               </span>
               <span
                 className={`tape${mine ? " tape-mine" : ""}`}
-                data-testid="core-item"
                 title={`${entry.player_name}, ${describe(pos.id)}`}
               >
                 {entry.player_name}

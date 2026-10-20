@@ -573,6 +573,38 @@ button.ring-selected:hover {
   font-size: 14px;
   padding: 3px 9px;
   border: 1px solid var(--line);
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* Full names, never cut: the pitch tags are too short for long ones. */
+.roster-list {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.roster-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2px 12px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.roster-mine {
+  background: var(--flood);
+}
+
+.roster-spot {
+  color: var(--muted);
+  font-weight: 400;
 }
 
 /* ---------- Auth ---------- */

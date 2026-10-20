@@ -247,6 +247,25 @@ export default function LineupPage() {
         )}
       </form>
 
+      {onPitch.length > 0 && (
+        <section className="bench" aria-labelledby="roster-title">
+          <h2 id="roster-title" className="bench-title">
+            Who&rsquo;s in
+          </h2>
+          <ul className="roster-list">
+            {onPitch.map((p) => (
+              <li
+                key={p.id}
+                className={`roster-item${p.user_id === user?.id ? " roster-mine" : ""}`}
+              >
+                <span data-testid="core-item">{p.player_name}</span>
+                <span className="roster-spot">{describe(p.position)}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {(bench.length > 0 || (loaded && openCount === 0)) && (
         <section className="bench" aria-labelledby="bench-title">
           <h2 id="bench-title" className="bench-title">
