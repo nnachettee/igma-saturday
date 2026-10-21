@@ -25,7 +25,7 @@ An automated bot grades this app on its public Vercel URL, acting like a strange
 - Keep keys in `.env.local` (listed in `.gitignore`) and in Vercel environment variables.
 
 ## About this app
-IGMA Saturday: IGMA Sunday League players (IE University) pick their position for the weekly Saturday 9 PM 7v7 at La Chopera, El Retiro.
+IGMA Saturday: IGMA Pickup Games players (IE University) pick their position for the weekly Saturday 9 PM 7v7 at La Chopera, El Retiro.
 - One game only. `/app` shows a 14-spot pitch (Red vs Blue, 1-2-3-1 each).
 - Data is SHARED: every logged-in player sees the whole lineup. Table: `public.spots` (see `supabase/schema.sql`).
 - Each user holds at most one entry. Submitting without picking a spot takes the first free one; when all 14 are taken the player goes on the bench. Never remove the bench: the grading bot must always be able to save.

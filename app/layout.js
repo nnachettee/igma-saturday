@@ -9,7 +9,7 @@ const caprasimo = Caprasimo({ weight: "400", subsets: ["latin"], variable: "--fo
 export const metadata = {
   title: "IGMA Saturday – pick your position at La Chopera",
   description:
-    "For IGMA Sunday League players at IE University: pick your position for the Saturday 9 PM 7v7 at La Chopera, El Retiro.",
+    "For IGMA Pickup Games players at IE University: pick your position for the Saturday 9 PM 7v7 at La Chopera, El Retiro.",
 };
 
 export const viewport = {

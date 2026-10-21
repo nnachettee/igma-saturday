@@ -56,8 +56,8 @@ Fill in the two lines in brackets from your own interviews and users. Don't inve
 
 ```
 Name: IGMA Saturday
-One-liner (max 20 words): IGMA Saturday lets IE Sunday League players pick their position for each Saturday's 7v7 at La Chopera.
-Who it's for: IE University students who play in the IGMA Sunday League (Fútbol 7).
+One-liner (max 20 words): IGMA Saturday lets IGMA Pickup Games players at IE pick their position for each Saturday's 7v7 at La Chopera.
+Who it's for: IE University students who play IGMA Pickup Games (Fútbol 7).
 The problem and how often it happens: [Every week the lineup is sorted out in WhatsApp: who's in, who dropped out, who plays where. What your 5 interviews said, e.g. "4 of 5 had a short team or a position clash in the last two weeks."]
 Main feature (what a user does in 30 seconds): Tap an open position on the pitch, type your name, press Join. Everyone in the league sees the updated lineup and who they're playing against.
 Data shared between users: yes

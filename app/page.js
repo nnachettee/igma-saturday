@@ -14,7 +14,7 @@ export default function Home() {
           which spots are still open and who you&rsquo;re up against. No more sorting the
           lineup in WhatsApp.
         </p>
-        <p className="for-who">For IGMA Sunday League players at IE University.</p>
+        <p className="for-who">For IGMA Pickup Games players at IE University.</p>
         <div className="cta-row">
           <Link href="/signup" className="button button-primary">
             Sign up
