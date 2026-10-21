@@ -35,7 +35,9 @@ export default function Home() {
             }}
           />
         </Link>
-        <p className="board-caption">Tap an open spot and your name goes on the board.</p>
+        <p className="board-caption">
+          Example board. The real lineup is only visible after you log in. Tap a spot to sign up.
+        </p>
       </section>
     </div>
   );
