@@ -735,3 +735,18 @@ button.ring-selected:hover {
 .pitch {
   border-color: var(--club);
 }
+
+.board-link {
+  display: block;
+  border-radius: 14px;
+  text-decoration: none;
+}
+
+.board-link .ring {
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.board-link:hover .ring {
+  background: rgba(255, 255, 255, 0.22);
+  border-style: solid;
+}

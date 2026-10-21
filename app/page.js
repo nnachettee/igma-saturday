@@ -26,12 +26,15 @@ export default function Home() {
       </section>
 
       <section className="landing-board" aria-label="Preview of the lineup board">
-        <Pitch
-          demo={{
-            filled: ["R-GK", "R-LB", "R-CM", "R-ST", "B-GK", "B-RB", "B-LM", "B-CM", "B-ST"],
-            highlight: "R-RM",
-          }}
-        />
+        {/* Visitors tap the spots: send them to sign up. */}
+        <Link href="/signup" className="board-link" aria-label="Sign up to pick your spot">
+          <Pitch
+            demo={{
+              filled: ["R-GK", "R-LB", "R-CM", "R-ST", "B-GK", "B-RB", "B-LM", "B-CM", "B-ST"],
+              highlight: "R-RM",
+            }}
+          />
+        </Link>
         <p className="board-caption">Tap an open spot and your name goes on the board.</p>
       </section>
     </div>
